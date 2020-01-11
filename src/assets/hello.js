@@ -1,7 +1,7 @@
 /**
  * Created by Master on 2017-06-08.
  */
-import * as jQuery from 'jquery/dist/jquery';
+// import * as jQuery from 'jquery/dist/jquery';
 
 (function($) {
   $.fn.helloWorld = function(value) {

@@ -1,8 +1,11 @@
 import {AfterViewInit, Component, DoCheck, ElementRef, Input, OnDestroy, OnInit, ViewChild} from '@angular/core';
-import * as $ from 'jquery/dist/jquery';
-import * as peity from 'peity/jquery.peity';
-import '../assets/hello';
+// import * as $ from 'jquery/dist/jquery';
+// import * as peity from 'peity/jquery.peity';
+// import 'assets/hello';
 // declare var pty: () => void;
+declare var helloWorld;
+declare var peity;
+declare var $:any;
 
 @Component({
   selector: 'app-root',
@@ -30,6 +33,7 @@ export class AppComponent implements OnInit, AfterViewInit,DoCheck, OnDestroy {
         } else {
           this.barColor = 'green';
         }
+        $('#hello').helloWorld('jung');
          // console.log(this.value1);
 /*
      let values = updatingChart.text().split(',');

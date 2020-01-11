@@ -1,6 +1,8 @@
 import {AfterViewInit, Directive, ElementRef, Input, OnChanges} from '@angular/core';
-import * as $ from 'jquery/dist/jquery';
-import * as peity from 'peity/jquery.peity';
+// import * as $ from 'jquery/dist/jquery';
+// import * as peity from 'peity/jquery.peity';
+declare var $:any;
+declare var peity:any;
 
 @Directive({
   selector: '[appBarPeity]'
@@ -12,9 +14,8 @@ export class BarPeityDirective implements AfterViewInit, OnChanges {
   objMyarg = {};
   constructor(private el: ElementRef) {}
   ngAfterViewInit() {
-        const jQuery = $;
         if ( this.idx ) {
-          var obj = jQuery(this.el.nativeElement).peity('bar');
+          var obj = $(this.el.nativeElement).peity('bar');
           this.objMyarg[this.idx] = obj;
         }
   }

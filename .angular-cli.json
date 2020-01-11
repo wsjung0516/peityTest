@@ -28,7 +28,7 @@
         "../node_modules/bootstrap/dist/js/bootstrap.js",
         "../node_modules/bootstrap-daterangepicker/daterangepicker.js",
         "../node_modules/moment/moment.js",
-        "../node_modules/peity/jquery.peity.js"
+        "../src/assets/hello.js"
 
 
       ],
